@@ -1,0 +1,10 @@
+def faktorialganjil(jumlah, awal):
+    if jumlah == 0:
+        return 1
+    else:
+        if awal % 2 == 1:
+            return (awal * faktorialganjil(jumlah - 1, awal + 2))
+        else:
+            return faktorialganjil(jumlah, awal + 1)
+print(faktorialganjil(5,0))
+print(faktorialganjil(2,0))
